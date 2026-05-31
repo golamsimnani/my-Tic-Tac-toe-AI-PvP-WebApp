@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe AI & PvP</title>
+  <link rel="icon" type="image/x-icon" href="ASSETS/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="ASSETS/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="ASSETS/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="ASSETS/favicon-16x16.png">
+  <link rel="manifest" href="ASSETS/site.webmanifest">
+  <!-- Google Fonts: Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <button id="menuToggle">☰ Menu</button>
+
+  <div class="navbar" id="navbar">
+    <button id="restartBtn">Restart</button>
+    <button id="newGameBtn">New Game</button>
+    <button id="toggleTheme">Toggle Theme</button>
+    <button id="toggleAiBtn">AI: ON</button>
+    <button id="togglePvPBtn">PvP: OFF</button>
+    <button id="toggleEndlessBtn">Endless: OFF</button>
+    <select id="difficulty" aria-label="Difficulty">
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+    <select id="gridSize" aria-label="Grid Size">
+      <option value="3">3x3</option>
+      <option value="4">4x4</option>
+      <option value="5">5x5</option>
+    </select>
+  </div>
+
+  <h1>Tic Tac Toe</h1>
+  <div id="status"></div>
+
+  <div id="board"></div>
+
+  <div class="scoreboard">
+    <div class="score-box">Player X: <span id="playerXScore">0</span></div>
+    <div class="score-box">Player O: <span id="playerOScore">0</span></div>
+    <div class="score-box">AI: <span id="aiScore">0</span></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
